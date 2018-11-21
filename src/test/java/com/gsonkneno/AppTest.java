@@ -46,6 +46,7 @@ public class AppTest {
             }
 
             //annotationSet 包含SpringBootConfiguration注解上的递归注解
+            System.out.println("\r\n===SpringBootConfiguration注解上递归获取到的注解(非java.lang.annotation包下)有==");
             System.out.println(annotationSet);
 
 

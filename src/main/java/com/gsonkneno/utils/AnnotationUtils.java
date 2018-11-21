@@ -17,6 +17,7 @@ public abstract class AnnotationUtils {
      * 递归获取注解 annotation 上的注解
      * @param visited
      * @param annotation
+     * (Annotation) annotation===>(Class) annotation.annotationType()===>(Annotation) annotationType.getAnnotations
      */
     public static void recursivelyCollectMetaAnnotations(Set<Annotation> visited, Annotation annotation) {
         Class<? extends Annotation> annotationType = annotation.annotationType();
